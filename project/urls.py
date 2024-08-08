@@ -20,8 +20,8 @@ from django.http import HttpResponse
 # Define the view
 def hello_world(request):
     html_content = """
-    <div style="text-align: center;">
-        <h2>Hello World</h2>
+    <div style="text-align: center; margin-top: 34px;">
+        <h1>Hello World</h1>
         <br>
         Developer Abdur Rahman
     </div>
