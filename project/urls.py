@@ -19,9 +19,16 @@ from django.http import HttpResponse
 
 # Define the view
 def hello_world(request):
-    return HttpResponse("Hello World - Abdur Rahman Chowdhury")
+    html_content = """
+    <div style="text-align: center;">
+        <h2>Hello World</h2>
+        <br>
+        Developer Abdur Rahman
+    </div>
+    """
+    return HttpResponse(html_content)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', hello_world),  # Add this line to respond to the base URL
+    path('', hello_world),  # Respond to the base URL
 ]
